@@ -1,0 +1,27 @@
+
+tr{
+height: 445px;
+width: 480px;
+
+
+}
+td{
+height: 445px;
+width: 480px;
+
+
+}
+img{
+height: 400px;
+width: 400px;
+margin:1.66%;
+}
+p{
+font-size: 50px;
+font-family: Raleway;
+margin:1.66%;
+text-transform: uppercase;
+border-bottom: 2px solid #FF00F0;
+width: 25%;
+padding-bottom: 2px;
+}

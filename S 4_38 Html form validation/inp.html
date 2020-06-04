@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Register</title>
+</head>
+<h1>Register</h1>
+<form>
+
+<div>
+<lable for="fname">First Name:</lable>
+<input type="text" placeholder="First Name" required>
+<lable for="lname">Last Name:</lable>
+<input type="text" placeholder="Last Name" required>
+</div>
+
+
+<div>
+<lable for="gender">Male</lable>
+<input name="gender" id="male" type="radio" value="male">
+<lable for="gender">Female</lable>
+<input name="gender" id="female" type="radio" value="female">
+<lable for="gender">Other</lable>
+<input name="gender" id="other" type="radio" value="other">
+<lable for="email">Email:</lable>
+<input type="email" placeholder="Email Address" required>
+<lable for="password">Password:</lable>
+<input type="password" pattern=".{5,15}" placeholder="Passwprd" required title="Password must be between 5 and 15 char">
+</div>
+
+
+<div>
+<lable for="birthday">Birthday:</lable>
+<select>
+<option>Month</option>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+</select>
+<select>
+<option>Day</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+<select>
+<option>Year</option>
+<option>1999</option>
+<option>2000</option>
+<option>2001</option>
+</select>
+</div>
+
+<p>I agree to the terms and conditions
+<input type="checkbox" required></p>
+<input type="submit">
+</form>
