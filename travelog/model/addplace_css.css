@@ -1,0 +1,42 @@
+body{
+	background-color: #0E1331;
+  	width: 100%;
+  	margin: auto;
+}
+table tr{
+	margin-left: 320px;
+	background: #FFFFFF;
+	width: 80%;
+}
+
+table {
+	margin-top: -10px;
+	margin-left: 275px;
+	margin-bottom: 150px;
+	width: 65%;
+}
+
+img{
+	width:65%;
+	margin-top: 150px;
+	margin-bottom: 2px;
+	margin-right: 275px;
+	margin-left: 275px;
+	//margin: auto;
+}
+
+.b{
+	//margin-top: 125px;
+	//margin-bottom: 75px;
+	//margin-right: 25px;
+	//margin-left: 320px;
+	width:50%;
+}
+
+.b,.a{
+	text-align: center;
+}
+
+h3{
+	text-align: left;
+}

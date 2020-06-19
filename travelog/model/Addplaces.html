@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Add Place</title>
+<link rel="stylesheet" type="text/css" href="Addplacees_css.css">
+</head>
+<body>
+<div class="action_win">
+
+	<div class="a">
+		<img src="travelog-logo-white.svg">
+	</div>
+	<table>
+		<td>
+			<div class="b">
+						<p><div><img src="arrow.svg"></div>
+						<div class="vas"><h3 class="txtalign">Add Place</h3></div1></p>
+			</div>
+			<div class="c">
+				<img src="travel-illustration.svg">
+			</div>
+		</td>
+		<td class="detail">
+			<form action="/campgrounds" method="POST">
+			<h2>Add Details about the place where you have visited.</h2>
+			<h3>City</h3>
+			<input type="text" name="cty">
+			<h3>Photo URL</h3>
+			<input type="URL" name="url">
+			<h3>Few words about this place</h3>
+			<textarea id="txtaras" name="txtarea" rows="4" cols="50"></textarea><br><br>
+			<input type="checkbox" name="visits" value="VISITED">VISITED
+			<input type="checkbox" name="visits" value="BUCKET-LIST">BUCKET-LIST
+			<h3>When did you travel here?</h3>
+			<input type="text" name="date"><br><br>
+			<a id="cancel_place" href="#">Cancel</a>
+			<input type="submit" nmae="addnew" value="ADD PLACE">
+			</form>
+			
+		</td>
+	</table>
+</div>
+</body>
+<script type="text/javascript" src="addplace_db.js"></script>
+</html>
