@@ -1,0 +1,65 @@
+<%- include ('partials/header.ejs'); -%>
+
+<div class="action_win">
+	<div class="a">
+		<img src=" travelog-logo-white.svg">
+		<div class="ab">
+		<a href="/logout">Logout</a>
+		</div>
+	</div>
+	<div class="b">
+		<table>
+			<td>
+				<img src="home-illustration.svg">
+			</td>
+			<td>
+				<h4>
+					Sometimes, what matters is to pack your bags and get on a car and travel Non-STOP
+				</h4>
+				<h2>Explore! The World is Not Enough</h2>
+			</td>
+		</table>
+	</div>
+	<form action="/campgrounds/new" method="GET">
+		<div class="c">
+		<table>
+			<td>
+				<h4>
+					<a class="dec" href="/campgrounds/myvisitedplace">MY VISITED PLACE</a>
+				</h4>
+			</td>
+			<td>
+				<h4 class="ab">
+					<a class="dec" href="/campgrounds/mybucketplace">MY BUCKET LIST</a>
+				</h4>
+			</td>
+		</table>
+	</div>
+	<div class="d">
+			<h2>My Visited Places
+			<input type="submit" value="ADD PLACE" name="new_insert"></h2>
+	</div>
+	</form>
+</div>
+
+
+<div class="container">
+	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		<% campgrounds.forEach(function(campground){ %>
+			<div class="col-md-3 col-sm-6">
+				<a href="/campgrounds/<%= campground._id %>/edit">
+				<div class="thumbnail">
+					
+					<img src="<%= campground.image %>">
+					<div class="caption">
+						<h5><%= campground.name %></h5>
+						<h3><%= campground.dates %></h3>
+					</div>
+				</a>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+</div>
+
+<%- include ('partials/footer.ejs'); -%>

@@ -1,0 +1,96 @@
+body{
+	width: 100%;
+	background : #EEEEEE;
+	margin: auto;
+}
+
+div.a{
+	width: 100%;
+	background : #0E1331;
+}
+div.a img{
+	width: 7.5%;
+	margin: 15px 20px;
+}
+div.b img{
+	width: 2.3%;
+	margin: 85.5px 0px 0px 35px;
+	margin-top: 60px;
+	margin-bottom: -15px;
+}
+
+div.c img{
+	width: 80%;
+	margin: 35px 80px;
+	margin-top: 155px;
+}
+
+div.b .vas{
+	margin: -50px 65px;
+	font-family: arial;
+	color: #0E1331;
+	font-size: 32;
+	margin-bottom: : 150px;
+}
+
+.detail form h3{
+	font-family: arial;
+	color: #0E1331;
+	font-size: 17;
+}
+
+
+form{
+	background:  #FFFFFF;
+	margin-left: 50px;
+	margin-top: 40px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+	padding: 20px 35px ;
+}
+
+#cancel_place{
+	text-decoration: none;
+}
+
+input[type=text],input[type=url],textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]{
+  background: #0E1331;
+  color: #FFFFFF;
+}
+
+input[type=checkbox]{
+	border: #828594;
+	margin-left: 2px;
+}
+.a .ab a{
+	text-decoration:none;
+	color:#FFFFFF;
+	float:right;
+	margin:-45px 25px;
+	font-size:16px;
+	font-family: arial;
+}
+
+.rks{
+font-size:16px;
+color:#D0021B;
+text-decoration:none;
+}
+
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}

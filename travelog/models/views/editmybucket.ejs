@@ -1,0 +1,51 @@
+
+<%- include ('partials/add-header.ejs'); -%>
+
+<div class="action_win">
+
+			<div class="a">
+				<img src= "travelog-logo-white.svg">
+				<div class="ab">
+					
+					<a href="/logout">Logout</a>
+				</div>
+			</div>
+			<table>
+				<td>
+					<div class="b">
+						<p><div><a href="/campgrounds/mybucketplace"><img src= "arrow.svg"></a></div>
+						<div class="vas"><h3 class="txtalign">Edit Place Details</h3></div1></p>
+					</div>
+					<div class="c">
+						<img src= "travel-illustration.svg">
+					</div>
+				</td>
+				<td class="detail">
+					<form  action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+						<h2>Add Details about the place where you have visited.</h2>
+						<h3>City</h3>
+						<input type="text" name="campground[name]" value="<%= campground.name %>">
+						<h3>Photo URL</h3>
+						<input type="URL" name="campground[image]" value="<%= campground.image %>">
+						<h3>Few words about this place</h3>
+						<textarea id="txtaras" name="campground[description]"  rows="4" cols="50" ><%= campground.description %></textarea><br><br>
+						<input type="checkbox" name="camground[visits]" value="VISITED">VISITED
+						<input type="checkbox" name="campground[visits]" value="BUCKET-LIST" checked>BUCKET-LIST
+						<h3>When did you travel here?</h3>
+						<input type="text" name="campground[dates]" value="<%= campground.dates %>"><br><br>
+						<a id="cancel_place" href="/campgrounds/mybucketplace">Cancel</a>
+						<input type="submit" name="editupdate" value="UPDATE PLACE">
+						
+						<br>
+						<br>
+						<button class="astext" formaction="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
+						<p class="rks">Delete This Place</p>
+						</button>
+			
+				</td>
+				
+				
+			</table>
+</div>
+
+<%- include ('partials/footer.ejs'); -%>

@@ -1,0 +1,43 @@
+
+<%- include ('partials/add-header.ejs'); -%>
+
+<div class="action_win">
+
+			<div class="a">
+				<img src= "travelog-logo-white.svg">
+				<div class="ab">
+					<a href="/logout">Logout</a>
+				</div>
+			</div>
+			<table>
+				<td>
+					<div class="b">
+						<p><div><a href="/campgrounds"><img src= "arrow.svg"></a></div>
+						<div class="vas"><h3 class="txtalign">Add Place</h3></div1></p>
+					</div>
+					<div class="c">
+						<img src= "travel-illustration.svg">
+					</div>
+				</td>
+				<td class="detail">
+					<form action="/campgrounds" method="POST">
+						<h2>Add Details about the place where you have visited.</h2>
+						<h3>City</h3>
+						<input type="text" name="cty">
+						<h3>Photo URL</h3>
+						<input type="URL" name="url">
+						<h3>Few words about this place</h3>
+						<textarea id="txtaras" name="desc" rows="4" cols="50"></textarea><br><br>
+						<input type="checkbox" name="visits" value="VISITED">VISITED
+						<input type="checkbox" name="visits" value="BUCKET-LIST">BUCKET-LIST
+						<h3>When did you travel here?</h3>
+						<input type="text" name="date"><br><br>
+						<a id="cancel_place" href="/campgrounds">Cancel</a>
+						<input type="submit" name="addnew" value="ADD PLACE">
+					</form>
+			
+				</td>
+			</table>
+</div>
+
+<%- include ('partials/footer.ejs'); -%>
